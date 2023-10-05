@@ -7,6 +7,7 @@ CREATE TABLE "Hotel" (
 -- CreateTable
 CREATE TABLE "Room" (
     "id" TEXT NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL,
     "capacity" INTEGER NOT NULL,
     "hotelId" TEXT NOT NULL,
     CONSTRAINT "Room_hotelId_fkey" FOREIGN KEY ("hotelId") REFERENCES "Hotel" ("id") ON DELETE RESTRICT ON UPDATE CASCADE

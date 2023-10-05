@@ -12,9 +12,11 @@
   "dependencies": {
     "@fastify/cors": "^8.4.0",
     "@prisma/client": "5.4.1",
+    "dayjs": "^1.11.10",
     "fastify": "^4.23.2",
     "prisma": "^5.4.1",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "zod": "^3.22.3"
   },
   "devDependencies": {
     "tsc": "^2.0.4",

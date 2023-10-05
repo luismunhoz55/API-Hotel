@@ -3,3 +3,53 @@ GET http://localhost:3000/test
 
 ###
 
+# @name create_hotel
+POST http://localhost:3000/create/hotel
+Content-Type: application/json
+
+{
+    "name": "Ratatouille"
+}
+
+###
+
+# @name create_room
+POST http://localhost:3000/create/room/cfdf10d6-3368-43f3-97b8-ad7be36ad8b9
+Content-Type: application/json
+
+{
+    "name": "Cabana Sheep",
+    "capacity": 2
+}
+
+###
+
+# @name create_reserve
+POST http://localhost:3000/create/reserve/d162f68a-df56-4473-9ff0-cf27d162c0d5
+Content-Type: application/json
+
+{
+    "personName": "Willyam",
+    "peopleComing": 2,
+    "checkInDate": "2023-01-01",
+    "checkOutDate": "2023-01-02"
+}
+
+###
+
+# @name get_all_hotels
+GET http://localhost:3000/hotels
+
+###
+
+# @name get_all_rooms
+GET http://localhost:3000/rooms/
+
+###
+
+# @name get_all_reserves
+GET http://localhost:3000/reserves/e2fdf5b1-8383-4e5b-9dfa-74440f32fb5a
+
+###
+
+POST http://localhost:3000/date
